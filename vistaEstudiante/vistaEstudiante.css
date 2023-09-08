@@ -1,0 +1,360 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0363bd;
+}
+
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    border-radius: 12px;
+    height: 579px;
+    padding: 30px;
+    background: #edf1f4;
+}
+
+.contenedor .navegacion{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    left:0;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .navegacion .logo{
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    padding: 12px;
+    height: 80px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.contenedor .navegacion .Logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegacion .botones{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding: 5px 12px;
+    width: 40%;
+}
+
+.navegacion .botones a{
+    display: flex;
+    position: relative;
+    padding: 12px 13px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.navegacion .botones a span{
+    font-size: 10px;
+    margin-top: -8px;
+    color: #666;
+}
+
+.navegacion .botones a .img{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navegacion .botones a .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgs{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorGr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.contenedorGr .barraBusqueda{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item-Element{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    padding: 5px 5px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+
+.item-Element span{
+    margin-left: 20px;
+    padding-right: 15px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #222;
+}
+
+.barraBusqueda .busquedaTrayecto{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    right: 100px;
+    padding: 0px 5px;
+    cursor: pointer;
+    height: 45px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.barraBusqueda .busquedaSeccion{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 200px;
+    width: 155px;
+    padding: 0 10px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.busquedaSeccion span,
+.busquedaTrayecto span{
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.busquedaSeccion .icon,
+.busquedaTrayecto .icon{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+
+.busquedaSeccion .icon img,
+.busquedaTrayecto .icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 30px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contenedorPrincipal .texto_Principal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.texto_Principal span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.busquedaTrayecto ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    padding: 6px;
+    top: 60px;
+    right: -15px;
+    background:  #ddd;
+    transition: all 300ms ease;
+    z-index: 111;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.busquedaTrayecto ul li{
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    list-style: none;
+    height: 100%;
+    transition: all 200ms ease;
+
+}
+
+.busquedaTrayecto ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    color: #666;
+}
+
+.busquedaTrayecto ul::before{
+    content: '';
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ddd;
+    top: -10px;
+    left: 5px;
+}
+
+.busquedaTrayecto:hover ul{
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.busquedaTrayecto:hover ul li:hover{
+    background: #fff;
+    padding: 2px 4px;
+    transform: scale(1.1);
+}
+
+.busquedaSeccion ul{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    padding: 6px;
+    top: 60px;
+    right: -15px;
+    background:  #ddd;
+    transition: all 300ms ease;
+    z-index: 111;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.busquedaSeccion ul li{
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    list-style: none;
+    height: 100%;
+    transition: all 200ms ease;
+}
+
+.busquedaSeccion ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    color: #666;
+}
+.busquedaSeccion ul::before{
+    content: '';
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ddd;
+    top: -10px;
+    left: 5px;
+}
+
+.busquedaSeccion:hover ul{
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.busquedaSeccion:hover ul li:hover{
+    background: #fff;
+    padding: 2px 4px;
+    transform: scale(1.1);
+}

@@ -1,0 +1,221 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0363bd;
+}
+
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    border-radius: 12px;
+    height: 579px;
+    padding: 30px;
+    background: #edf1f4;
+}
+
+.contenedorPrincipal h3{
+    font-size: 1.50em;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+ 
+.contenedor .navegacion{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    left:0;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .navegacion .logo{
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    padding: 12px;
+    height: 80px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.contenedor .navegacion .Logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegacion .botones{
+    display: flex;
+    gap: 30px;
+}
+
+.navegacion .botones a{
+    display: flex;
+    position: relative;
+    padding: 5px 13px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegacion .botones a span{
+    font-size: 10px;
+    margin-top: -8px;
+    color: #666;
+    padding-bottom: 4px;
+}
+
+.navegacion .botones a .img{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navegacion .botones a .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgs{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.contenedorGr{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    height: 70%;
+}
+
+.contenedorGr .barraBusqueda{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contenedorGr .barraBusqueda .item-Element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+}
+.barraBusqueda .item-Element a{
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 30px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 70%;
+    padding: 12px 0;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.elementos1{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    padding: 15px 40px;
+    gap: 30px;
+}
+
+
+.elementos1 .item-Element{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elementos1 .item-Element a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    padding: 2px 9px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    
+}
+
+.item-Element a span{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #666;
+}
+
+.elementos2 .item-Element a .imgs{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

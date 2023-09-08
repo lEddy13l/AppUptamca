@@ -1,0 +1,315 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0363bd;
+}
+
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    border-radius: 12px;
+    height: 579px;
+    padding: 30px;
+    background: #edf1f4;
+}
+
+.contenedor .navegacion{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    left:0;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .navegacion .logo{
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    padding: 12px;
+    height: 80px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.contenedor .navegacion .Logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegacion .botones{
+    display: flex;
+    gap: 30px;
+}
+
+.navegacion .botones a{
+    display: flex;
+    position: relative;
+    padding: 5px 13px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegacion .botones a span{
+    font-size: 10px;
+    margin-top: -8px;
+    color: #666;
+    padding-bottom: 4px;
+}
+
+.navegacion .botones a .img{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navegacion .botones a .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgs{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.imgs img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorGr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.contenedorGr .barraBusqueda{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item-Element{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    padding: 5px 5px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 30px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.item-Element span{
+    margin-left: 20px;
+    padding-right: 15px;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: #222;
+}
+
+.contenedorPrincipal .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.form h3{
+    font-size: 18px;
+    color: #222;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.form .form-content{
+    display: flex;
+    width: 300px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.form-content .input-form{
+    height: 20px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.input-form input{
+    width: 100%;
+    margin-top: 5px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    height: 100%;
+    color: #222;
+}
+
+.input-form input:focus{
+    border-bottom: 2px solid #666;
+}
+
+.form-content .guardar{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(150%,-50%);
+    display: flex;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    transition: 0.2s;
+}
+
+.guardar a{
+    text-decoration: none;
+    color: #666;
+    width: 100%;
+}
+
+.input-form span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form.tipo-usuario{
+    background: #fff;
+    position: relative;
+    box-shadow: 0  0 5px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.input-form ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    padding: 6px;
+    top: -70px;
+    right: 18px;
+    background:  #ddd;
+    transition: all 300ms ease;
+    z-index: 111;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.input-form ul li{
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    list-style: none;
+    height: 100%;
+    transition: all 200ms ease;
+}
+
+.input-form ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    color: #666;
+}
+
+.input-form ul::before{
+    content: '';
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ddd;
+    top: -10px;
+    right: 75px;
+}
+
+.input-form:hover ul{
+    top: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.input-form:hover ul li:hover{
+    background: #fff;
+    padding: 2px 4px;
+    transform: scale(1.1);
+}

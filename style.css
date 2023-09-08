@@ -1,0 +1,125 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #edf1f4;
+}
+
+.container{
+    padding: 20px 30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0363bd; 
+    border-radius: 20px;
+}
+
+.login{
+    position: relative;
+    padding: 80px 50px 50px;
+    background: #edf1f4;
+    width: 360px;
+    box-shadow: 15px 14px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login form{
+    position: relative;
+    width: 100%;
+}
+
+.login form .imgbox{
+    width: 50px;
+    left: -15px;
+    top: -55px;
+    display: flex;
+    right: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login form span{
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    right: 30px;
+    top: -55px;
+    justify-content: left;
+} 
+
+
+.login form .imgbox img{
+    width: 100%;
+    margin-bottom: -25px;
+}
+
+.imgUser{
+    position: relative;
+    left: 75px;
+    width: 90px;
+}
+
+.login form h2{
+    text-align: center;
+    line-height: 0.9em;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+
+.login form .cajaInput{
+    display: flex;
+    position: relative;
+}
+
+.login form .cajaInput input{
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: transparent;
+
+}
+
+.login form .cajaInput input[type="text"],
+.login form .cajaInput input[type="password"]{
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px #fff;
+}
+
+.login form .cajaInput img{
+    position: absolute;
+    width: 15px;
+    top: 20%;
+    left: 20px;
+}
+
+.login form .cajaInput input[type="submit"]{
+    font-weight: 600;
+    padding: 15px 20px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login form .cajaInput input[type="submit"]:focus{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.1);
+}

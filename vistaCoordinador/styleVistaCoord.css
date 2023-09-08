@@ -1,0 +1,191 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0363bd;
+}
+
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    border-radius: 12px;
+    height: 579px;
+    padding: 30px;
+    background: #edf1f4;
+}
+
+.contenedorPrincipal h3{
+    font-size: 1.50em;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+ 
+.contenedor .navegacion{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    left:0;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor .navegacion .logo{
+    display: flex;
+    border-radius: 50%;
+    width: 80px;
+    padding: 12px;
+    height: 80px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+}
+
+.contenedor .navegacion .Logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navegacion .botones{
+    display: flex;
+    gap: 30px;
+}
+
+.navegacion .botones a{
+    display: flex;
+    position: relative;
+    padding: 5px 13px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navegacion .botones a span{
+    font-size: 10px;
+    margin-top: -8px;
+    color: #666;
+    padding-bottom: 4px;
+}
+
+.navegacion .botones a .img{
+    display:flex;
+    padding: 12px 8px;   
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.navegacion .botones a .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.elementos2 .imgs,
+.elementos1 .imgs{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.elementos2 .imgs img,
+.elementos1 .imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    flex-direction: column;
+    border-radius: 30px;
+    gap:19px;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    width: 100%;
+    height: 70%;
+    margin-top: 30px;
+}
+
+.contenedorPrincipal .elementos1{
+    display: flex;
+    width: 55%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+}
+
+.contenedorPrincipal .elementos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.contenedorPrincipal .elementos2 .item-Element,
+ .contenedorPrincipal .elementos1 .item-Element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 105px;
+}
+
+
+
+ .item-Element a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    text-decoration: none;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25),
+    -2px -2px 5px rgba(0, 0, 0, 0.05),
+    inset 3px 2px 5px rgba(255, 255, 255, 0.15),
+    inset -5px -5px 6px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 8px rgba(255, 255, 255, 0.50),
+    5px 5px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    
+}
+
+.contenedorPrincipal .item-Element a span{
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: #666;
+}
+
